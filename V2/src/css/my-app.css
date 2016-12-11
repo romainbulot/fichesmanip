@@ -1,0 +1,239 @@
+/*********************************
+STYLE DE LA PAGE DU MENU PRINCIPAL
+*********************************/
+
+/* Import de la police Open Sans Light */
+@font-face {
+  font-family: 'OpenSans-Light';
+    src: url('../fonts/OpenSans-Light?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/OpenSans-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/OpenSans-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Regular?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/OpenSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/OpenSans-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Libertine-aS';
+    src: url('../fonts/LinLibertine_aS?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/LinLibertine_aS.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/LinLibertine_aS.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+/* Suppression des bordures blanches autour du body */
+body {
+margin:0px;
+}
+
+/**************************/
+/* ICONES PAGE D'ACCUEIL */
+/**************************/
+.premiere_a, i.premiere_a {
+  background:#02A89A;
+}
+.premiere_b, i.premiere_b {
+  background:#34cfbc;
+}
+.deuxieme_a, i.deuxieme_a {
+  background:#0060A7;
+}
+.deuxieme_b, i.deuxieme_b {
+  background:#3390d6;
+}
+.troisieme_a, i.troisieme_a {
+  background:#b379ab;
+}
+.troisieme_b, i.troisieme_b {
+  background:#dea6d5;
+}
+
+.quatrieme_a, i.quatrieme_a {
+   background:#545454;
+}
+
+.quatrieme_b, i.quatrieme_b {
+  background:#7d7d7d;
+}
+/*****************************/
+/* FIN ICONES PAGE D'ACCUEIL*/
+/***************************/
+/*****************************/
+/*     ICONES MENU LATERAL  */
+/***************************/
+i.iconLat {
+  width: 35px;
+  height: 35px;
+  border-radius: 30px;
+  background-size:25px;
+  background-position: center;
+}
+i.icon.latmenu_accueil {
+    background-color:  #ABABAB;
+    background-image: url("../img/icon_home.png");
+}
+
+
+i.icon.latmenu_premiere_a {
+    background-image: url("../img/icon_premiere_a.png");
+    background-repeat: no-repeat;
+}
+i.icon.latmenu_premiere_b {
+    background-image: url("../img/icon_premiere_b.png");
+    background-repeat: no-repeat;
+}
+i.icon.latmenu_deuxieme_a {
+    background-image: url("../img/icon_deuxieme_a.png");
+    background-repeat: no-repeat;
+}
+i.icon.latmenu_deuxieme_b {
+    background-image: url("../img/icon_deuxieme_b.png");
+    background-repeat: no-repeat;
+}
+i.icon.latmenu_troisieme_a {
+    background-image: url("../img/icon_troisieme_a.png");
+    background-repeat: no-repeat;
+}
+i.icon.latmenu_troisieme_b {
+    background-image: url("../img/icon_troisieme_b.png");
+    background-repeat: no-repeat;
+}
+/*****************************/
+/*       POLICES:     ;     */
+/***************************/
+.fontOpen {
+  font-family: 'OpenSans', Fallback, sans-serif;
+  font-size: 18px;
+}
+.fontOpenLight {
+  font-family: 'OpenSans-Light', Fallback, sans-serif;
+  font-size: 18px;
+}
+
+.logo {
+  font-family: 'OpenSans-Light', Fallback, sans-serif;
+  /* Police responsive */
+}
+
+.logo span {
+    font-size: 22px;
+}
+/* Container principal - utilisation de flex pour le layout */
+.main {
+  margin:0px;
+  font-family: 'OpenSans-Light', Fallback, sans-serif;
+  /* Police responsive */
+  font-size: 3vh;
+  color:white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  /* Container responsive en hauteur et largeur */
+  height: 77%;
+  width: 100%;
+}
+
+.ContenuTexte{
+  padding: 5%;
+  font-family: 'OpenSans', Fallback, sans-serif;
+}
+.ContenuTexte p{
+  text-align: justify;
+}
+.ContenuTexte ul{
+  text-align: justify;
+}
+.ContenuTexte b{
+ color:#faa238;
+}
+.ContenuTexte h1{
+  color:#a36841;
+}
+.ContenuTexte h2{
+  color:#885330;
+}
+.ContenuTexte h3{
+  color:#61432f;
+}
+
+/*****************************/
+/*       FIN POLICES:       */
+/***************************/
+.fond_icones {
+  width: 35px;
+  height: 35px;
+  border-radius: 30px;
+  background-size:20px;
+  background-position: center;
+}
+.couleurLogo1 {
+  color:#ABABAB;
+}
+
+
+
+
+.image_recueil {
+  height:25%;
+  width:95%;
+  background-image:url(../img/recueil.jpg);
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position: center;
+
+}
+/* Partie droite plus foncées = container contenant les titres */
+.labels {
+  width: 44%;
+  height:41%;
+  display: flex;
+  justify-content:flex-end;
+  flex-direction: column;
+  margin : 3%;
+}
+
+
+/* Classe du span contenant les titres, espacement de 2%  */
+.titre{
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+
+.icon_princip {
+  text-align: center;
+  height: 50%;
+  margin-bottom: 13%;
+  margin-top: 4%;
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+
+
+
+
+.livre {
+  background: #27291e;
+}
+.livre:hover{
+  background:#c9051d;
+}
+/* Si l'orientation du smartphone est en paysage alors appliquer ces règles  */
+@media screen and (orientation:landscape) {
+  .image_recueil {
+    height:0%;
+  }
+  /* Partie droite plus foncées = container contenant les titres */
+  .labels {
+    height:89%;
+    display: flex;
+    justify-content:flex-end;
+    flex-direction: column;
+    margin : 1%;
+  }
+}

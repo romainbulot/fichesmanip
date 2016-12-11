@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- Your app title -->
+    <title>BaquetPédia</title>
+    <!-- Path to Framework7 iOS CSS theme styles-->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <!-- Path to Framework7 iOS related color styles -->
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+    <!-- Police-->
+    <link rel="stylesheet" href="fonts/awesome/css/font-awesome.min.css">
+  </head>
+  <body class="theme-white layout-dark">
+
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay "></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block ">
+        <div class="content-block-title">Menu</div>
+        <div class="list-block fontOpenLight">
+            <ul>
+              <li><a href="index.html" class="item-link close-panel">
+                  <div class="item-content">
+                      <div class="item-media">
+                          <i class="iconLat icon latmenu_accueil"></i></div>
+                          <div class="item-inner">
+                              <div class="item-title">Accueil</div>
+                          </div>
+                      </div>
+                  </a>
+              </li>
+              <li><a href="index.html" class="item-link close-panel">
+                  <div class="item-content">
+                      <div class="item-media">
+                          <i class="premiere_a iconLat icon latmenu_premiere_a"></i></div>
+                          <div class="item-inner">
+                              <div class="item-title">Cours</div>
+                          </div>
+                      </div>
+                  </a>
+              </li>
+              <li><a href="index.html" class="item-link close-panel">
+                  <div class="item-content">
+                      <div class="item-media">
+                          <i class="premiere_b iconLat icon latmenu_premiere_b"></i></div>
+                          <div class="item-inner">
+                              <div class="item-title">Vocabulaire</div>
+                          </div>
+                      </div>
+                  </a>
+              </li>
+              <li><a href="index.html" class="item-link close-panel">
+                  <div class="item-content">
+                      <div class="item-media">
+                          <i class="deuxieme_a iconLat icon latmenu_deuxieme_a"></i></div>
+                          <div class="item-inner">
+                              <div class="item-title">Infos Pratique</div>
+                          </div>
+                      </div>
+                  </a>
+              </li>
+              <li><a href="index.html" class="item-link close-panel">
+                  <div class="item-content">
+                      <div class="item-media">
+                          <i class="deuxieme_b iconLat icon latmenu_deuxieme_b"></i></div>
+                          <div class="item-inner">
+                              <div class="item-title">Langues</div>
+                          </div>
+                      </div>
+                  </a>
+              </li>
+              <li><a href="index.html" class="item-link close-panel">
+                  <div class="item-content">
+                      <div class="item-media">
+                          <i class="troisieme_a iconLat icon latmenu_troisieme_a"></i></div>
+                          <div class="item-inner">
+                              <div class="item-title">Mémoire</div>
+                          </div>
+                      </div>
+                  </a>
+              </li>
+              <li><a href="index.html" class="item-link close-panel">
+                  <div class="item-content">
+                      <div class="item-media">
+                          <i class="troisieme_b iconLat icon latmenu_troisieme_b"></i></div>
+                          <div class="item-inner">
+                              <div class="item-title">Images</div>
+                          </div>
+                      </div>
+                  </a>
+              </li>
+
+
+                <li><a href="apropos.html" class="item-link close-panel">
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="icon latmenu_apropos"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title">A propos</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+      </div>
+      </div>
+    </div>
+    <!-- Views -->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+            <div class="center sliding logo"><span class="couleurLogo1"> Fiches Manip'</span> </div>
+            <div class="right">
+              <!--
+                Right link contains only icon - additional "icon-only" class
+                Additional "open-panel" class tells app to open panel when we click on this link
+              -->
+              <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, "data-page" contains page name -->
+          <div data-page="index" class="page">
+            <!-- overflow:hidden pour interdire le scroll (bug daffichage) page content -->
+            <div class="page-content" style="overflow:hidden">
+
+            
+
+              <div class="main">
+
+                <div class="labels premiere_a" onclick="mainView.router.loadPage('./operation.html')">
+                  <span class="icon_princip" style="background-image:url(img/icon_premiere_a.png);">
+                  </span>
+                  <span class="titre">
+                    Cours
+                  </span>
+                </div>
+                <div class="labels premiere_b">
+                  <span class="icon_princip" style="background-image:url(img/icon_premiere_b.png);">
+                  </span>
+                  <span class="titre">
+                    Vocabulaire
+                  </span>
+                </div>
+                <div class="labels deuxieme_a">
+                    <span class="icon_princip" style="background-image:url(img/icon_deuxieme_a.png);">
+                  </span>
+                  <span class="titre">
+                    Infos Pratiques
+                  </span>
+                </div>
+                <div class="labels deuxieme_b" onclick="mainView.router.loadPage('./foncpub.html')">
+                    <span class="icon_princip" style="background-image:url(img/icon_deuxieme_b.png);">
+                  </span>
+                  <span class="titre">
+                    Langues
+                  </span>
+                </div>
+                <div class="labels troisieme_a" onclick="mainView.router.loadPage('./rh.html')">
+                    <span class="icon_princip" style="background-image:url(img/icon_troisieme_a.png);">
+                  </span>
+                  <span class="titre">
+                    Mémoire
+                  </span>
+                </div>
+                <div class="labels troisieme_b" onclick="mainView.router.loadPage('./defense.html')">
+                    <span class="icon_princip" style="background-image:url(img/icon_troisieme_b.png);">
+                  </span>
+                  <span class="titre">
+                   Images
+                  </span>
+                </div>
+
+                 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+
+  </body>
+</html>
